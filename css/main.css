@@ -1,0 +1,124 @@
+ul,li{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		a{
+			text-decoration: none;
+		}
+		body{
+			font-family: "微软雅黑";
+			background-color: #fff;
+			/*overflow-y: hidden;*/
+		}
+		.container-body{
+			position: relative;
+            width: 100%;
+            height: 100%;
+		}
+		
+			.left{
+				background: #fff;
+			    height: 100%;
+				left: 0px;
+				overflow-y: auto;
+				width: 300px;
+				position: fixed;
+			}
+			.right{
+				right: 0px;
+				left: 0px;
+				position: absolute;
+				float: right;
+				left: 300px;
+				background: #fff;
+				height: 1000px;
+				overflow-y: auto;
+			}
+			 .right li{
+			 	color: #ccc;
+			 }
+			 .right li:hover{
+			 	color: #444;
+			 }
+			 .right-nav>ul>li>h4{
+			 	display: none;
+			 }
+			 .right-nav:hover li:nth-child(2) h4{
+			 	display: inline-block;
+			 	color: #ccc;
+			 }
+			 .right-nav li:nth-child(2) h4:hover{
+			 	color: #444;
+			 }
+			.left>ul>li{
+				text-align: left;
+				width: 100%;
+				color: #ccc;
+				margin: 2px 0px;
+				cursor: pointer;
+			}
+			.left>ul>li:first-child{
+				border-bottom: 1px solid #ccc;
+			}
+			.left>ul>li:first-child input{
+				width: 95%;
+                list-style: none;
+                outline: none;
+                border: none;
+                padding-left: 10px;
+			}
+			.left>ul>li:first-child span{
+				padding: 15px 0px;
+                margin-left: -20px;
+			}
+			.left>ul>li>span{
+				margin-left: 50px;
+				display: inline-block;
+				padding: 10px 0px;
+			}
+			.left>ul>li>ul>li{
+				text-align: center;
+				color: #7f8c8d;
+				cursor: pointer;
+                font-family: "微软雅黑";
+                padding: 10px 0px;
+				background: #fff;
+			}
+			.right-nav{
+				height: 45px;
+			    /*border-bottom: 1px solid #ddd;*/
+				line-height: 45px;
+			}
+			.col-md-no{
+				width: 25%;
+				display: inline-block;
+			    color: #7f8c8d;
+			}
+			.cursor-pointer{
+				cursor: pointer;
+			}
+			.glyphicon-share-alt{
+				margin-right: 20px;
+			}
+			.left-right-btn{
+				position: fixed;
+				height: 0px;
+                left:300px;
+                right:0px;
+                top: 50%;
+			}
+			.left-right-btn span{
+				font-size: 23px;
+				cursor: pointer;
+				color: #ccc;
+				
+			} 
+			.left-right-btn span:last-child{
+				float: right;
+			} 
+            .active{
+            	color: #42b983 !important;
+            	border-left: 3px solid #42b983;
+            	margin-left: 5px;
+            }
